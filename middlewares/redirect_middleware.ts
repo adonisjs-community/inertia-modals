@@ -4,7 +4,7 @@ import { Modal } from '../src/modal.js'
 
 const status = 302
 
-export default class RedirectEnhancer {
+export default class RedirectMiddleware {
   async handle(ctx: HttpContext, next: NextFn) {
     const originalRedirectBack = ctx.response.redirect().back
 
